@@ -1,8 +1,8 @@
 {
+  "allow-dark-mode": true,
+
   "breakpoint-tablet": "1023px",
   "breakpoint-mobile": "767px",
-
-  "top-panel-height": 200,
 
   "global-radius": "0.5rem",
 

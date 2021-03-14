@@ -1,3 +1,5 @@
+$body-background: $pt-white;
+
 $font-family: 'Sniglet', cursive;
 $font-size: 1rem;
 $font-color: $pt-black;
@@ -7,3 +9,11 @@ $anchor-color-hover: darken($anchor-color, 10%);
 $anchor-transition: color 0.25s ease-in-out;
 
 $disabled-opacity: 0.6;
+
+// dark mode overrides
+@if $allow-dark-mode {
+  @media (prefers-color-scheme: dark) {
+    $body-background: $pt-black;
+    $font-color: $pt-white;
+  }
+}
