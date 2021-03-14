@@ -1,0 +1,30 @@
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+a {
+  cursor: pointer;
+  color: $pt-blue;
+  text-decoration: unset;
+
+  &.disabled {
+    color: unset;
+  }
+
+  &:not(.disabled) {
+    transition: $anchor-transition;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+}

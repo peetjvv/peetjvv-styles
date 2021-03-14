@@ -1,0 +1,9 @@
+$font-family: 'Sniglet', cursive;
+$font-size: 1rem;
+$font-color: $pt-black;
+
+$anchor-color: $pt-blue;
+$anchor-color-hover: darken($anchor-color, 10%);
+$anchor-transition: color 0.25s ease-in-out;
+
+$disabled-opacity: 0.6;

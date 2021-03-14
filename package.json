@@ -1,0 +1,36 @@
+{
+  "name": "@peetjvv/styles",
+  "version": "0.0.1",
+  "description": "Shared styles and componentes for peetjvv sites",
+  "scripts": {
+    "clean": "rimraf dist",
+    "copystyles": "cpr ./src/styles ./dist/styles --overwrite",
+    "build": "npm run clean && npm run copystyles"
+  },
+  "author": "Peet Janse van Vuuren",
+  "license": "MIT",
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "useTabs": false,
+    "arrowParens": "avoid"
+  },
+  "peerDependencies": {
+    "json-loader": "^0.5.7",
+    "node-sass-json-importer": "^4.3.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "cpr": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.3"
+  }
+}
