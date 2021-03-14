@@ -1,6 +1,6 @@
 {
   "name": "@peetjvv/styles",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Shared styles and componentes for peetjvv sites",
   "repository": {
     "type": "git",
@@ -17,9 +17,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "copyfonts": "cpr ./src/fonts ./dist/fonts --overwrite",
     "copystyles": "cpr ./src/scss ./dist/scss --overwrite",
-    "copyfiles": "npm run copystyles && npm run copyfonts && cpr package.json ./dist/package.json",
+    "copyfiles": "npm run copystyles && cpr package.json ./dist/package.json && cpr README.md ./dist/README.md",
     "build": "npm run clean && npm run copyfiles",
     "publish": "npm publish ./dist --access public"
   },
