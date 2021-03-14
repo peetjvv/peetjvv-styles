@@ -2,13 +2,24 @@
   "name": "@peetjvv/styles",
   "version": "0.0.1",
   "description": "Shared styles and componentes for peetjvv sites",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peetjvv/peetjvv-styles"
+  },
+  "homepage": "https://github.com/peetjvv/peetjvv-styles#readme",
+  "bugs": {
+    "url": "https://github.com/peetjvv/peetjvv-styles/issues"
+  },
+  "author": {
+    "name": "Peet Janse van Vuuren",
+    "url": "https://peetjvv.co.za/"
+  },
+  "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
     "copystyles": "cpr ./src/styles ./dist/styles --overwrite",
     "build": "npm run clean && npm run copystyles"
   },
-  "author": "Peet Janse van Vuuren",
-  "license": "MIT",
   "prettier": {
     "semi": true,
     "singleQuote": true,
