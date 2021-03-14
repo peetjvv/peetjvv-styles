@@ -17,8 +17,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "copystyles": "cpr ./src/styles ./dist/styles --overwrite",
-    "build": "npm run clean && npm run copystyles"
+    "copyfonts": "cpr ./src/fonts ./dist/fonts --overwrite",
+    "copystyles": "cpr ./src/scss ./dist/scss --overwrite",
+    "copyfiles": "npm run copystyles && npm run copyfonts",
+    "build": "npm run clean && npm run copyfiles"
   },
   "prettier": {
     "semi": true,
