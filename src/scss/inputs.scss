@@ -2,6 +2,7 @@ input {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+  background-color: $body-background;
 
   &::placeholder,
   &::-moz-placeholder,

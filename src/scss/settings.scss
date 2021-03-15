@@ -1,4 +1,9 @@
+/// body
 $body-background: $pt-white;
+
+/// box shadows
+$box-shadow-1: 0px 0px 12px -6px $pt-black;
+$box-shadow-2: 0px 0px 19px -6px $pt-black;
 
 $font-family: 'Sniglet', cursive;
 $font-size: 1rem;
@@ -15,5 +20,7 @@ $disabled-opacity: 0.6;
   @media (prefers-color-scheme: dark) {
     $body-background: $pt-black;
     $font-color: $pt-white;
+    $box-shadow-1: 0px 0px 12px -6px $pt-white;
+    $box-shadow-2: 0px 0px 19px -6px $pt-white;
   }
 }
