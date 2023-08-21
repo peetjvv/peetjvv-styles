@@ -31,7 +31,6 @@
     "arrowParens": "avoid"
   },
   "peerDependencies": {
-    "json-loader": "^0.5.7",
     "react": "17 || 18",
     "react-dom": "17 || 18",
     "sass-loader": "^13.3.2",
